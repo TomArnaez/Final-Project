@@ -1,0 +1,22 @@
+Recommend installing a virtual environment for python through Ubuntu (Recommended):
+	python3 -m venv venv
+	source venv/bin/activate
+
+Through windows:
+	python3 -m venv venv
+	.\venv\Scripts\activate
+
+Then install python packages:
+	pip install -r requirements.txt
+
+To start jupyter notebook, run command:
+	jupyter notebook
+
+-----------------------------------------------
+Note that the folder algo is NOT my work but the algorithm the project is evaluating, and I've included it for the convenience of setting up the project as cloning git reposiories was unreliable with GitPython.
+
+cifar training.ipynb trains models on the cifar-10 dataset, but the model weights are already included in /models and readily loaded by other ipython notebooks as they are quite time consuming to train.
+
+Each notebook (.ipynb) corresponds to a different adversarial attack or input corruption test. To run through the notebook, go to cells -> run all.
+
+It is highly recommended running on a machine with a CUDA-enabled GPU available to PyTorch, as the training can be quite intensive and time consuming otherwise.
